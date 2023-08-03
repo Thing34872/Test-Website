@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var callOne = true;
+function one() {
+   alert('Light');
+}
+function two() {
+   alert('Dark');
+}
+function chgThm(){
+   if(callOne) one();
+  else two();
+  callOne = !callOne;
+}
+    </script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website of my test scripts</title>
+</head>
+<body>
+    <button onclick="chgThm()">Change Theme</button>
+</body>
+</html>
