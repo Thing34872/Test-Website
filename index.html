@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <script>
         var callOne = true;
 function one() {
-   alert('Light');
+    var element = document.body;
+   element.classList.toggle("light-mode");
 }
 function two() {
-   alert('Dark');
+    var element = document.body;
+   element.classList.toggle("dark-mode");
 }
 function chgThm(){
    if(callOne) one();
